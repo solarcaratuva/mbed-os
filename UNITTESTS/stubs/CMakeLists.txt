@@ -34,3 +34,33 @@ target_link_libraries(mbed-stubs
         mbed-stubs-platform
         mbed-stubs-rtos
 )
+
+target_link_libraries(mbed-headers
+    INTERFACE
+        mbed-headers-base
+        mbed-headers-platform
+        mbed-headers-example
+)
+
+target_link_libraries(mbed-stubs
+    INTERFACE
+        mbed-stubs-connectivity
+        mbed-stubs-drivers
+        mbed-stubs-events
+        mbed-stubs-hal
+        mbed-stubs-platform
+        mbed-stubs-rtos
+        mbed-stubs-storage
+        mbed-stubs-example-interface
+)
+target_link_libraries(mbed-stubs
+    INTERFACE
+        mbed-stubs-connectivity
+        mbed-stubs-drivers
+        mbed-stubs-events
+        mbed-stubs-hal
+        mbed-stubs-platform
+        mbed-stubs-rtos
+        mbed-stubs-storage
+        mbed-stubs-example-interface
+)
